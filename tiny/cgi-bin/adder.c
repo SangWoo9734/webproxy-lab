@@ -33,9 +33,10 @@ int main(void) {
   
   if (strcmp(getenv("REQUEST_METHOD"), "HEAD")) {
     printf("%s", content);
-    fflush(stdout);
   }
 
+
+  fflush(stdout);
   exit(0);
 }
 /* $end adder */
